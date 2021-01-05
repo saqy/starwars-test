@@ -20,7 +20,6 @@ export const fetchStarshipSuccess = (starship) => {
 };
 
 export const fetchStarship = (_url, characterIndex) => {
-  // console.log("Charater: ", characterIndex);
   return (dispatch) => {
     axios
       .get(_url)
