@@ -53,7 +53,6 @@ export const fetchCharacter = (_url) => {
         }
       })
       .catch((err) => {
-        console.log(err);
         if (err.response && err.response.data) {
           // client received an error response (5xx, 4xx)
           dispatch(fetchCharacterFail(err.response.data));
